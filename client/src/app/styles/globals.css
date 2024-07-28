@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ 
+.input_style {
+  border: 1px solid gray;
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  position: fixed;
+}
+
+.input_container {
+  margin-top: 80px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+ 
+.product_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 80px;
+}
+
+.product_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px; /* Adjust as necessary */
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.img_container {
+  width: 100%;
+  height: 300px; /* Adjust as necessary */
+  overflow: hidden;
+}
+
+.product_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content_container {
+  padding: 15px;
+  text-align: center;
+  width: 100%; 
+}
+
+.product_heading {
+  font-size: 1.2em;
+  margin: 10px 0;
+  height: 50px;
+}
+
+.description {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.prodcut_button {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prodcut_button:hover {
+  background-color: #333;
+}
+
+/* Media Queries */
+
+@media (max-width: 750px) {
+  .product_list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    margin-bottom: 80px;
+    
+  }
+
+  .product_card {
+    width: 95%;
+  }
+
+  
+
+  .product_heading {
+    font-size:1em;
+    font-weight: 400;
+    margin: 5px 0; 
+  }
+
+  .description {
+    font-size: 0.9em;
+    margin: 5px 0;
+  }
+
+  .prodcut_button {
+    font-size: 0.9em;
+    padding: 10px;
+    font-weight: bold;
+    
+  }
+}
+
+@media (max-width: 650px) {
+  .product_list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    margin-bottom: 80px;
+    
+  }
+
+  .product_card {
+    width: 95%;
+  }
+
+  
+
+  .product_heading {
+    font-size:1em;
+    font-weight: 400;
+    margin: 5px 0; 
+  }
+
+  .description {
+    font-size: 0.9em;
+    margin: 5px 0;
+  }
+
+  .prodcut_button {
+    font-size: 0.9em;
+    padding: 10px;
+    
+    font-weight: bold;
+    
+  }
+  
+}
+
+ 
